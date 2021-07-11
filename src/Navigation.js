@@ -22,19 +22,17 @@ const Navigation = () => {
         }, []);
 
     return (
-        <>
-            <NavigationContainer>
-                <STACK1.Navigator
-                    headerMode={'none'}
-                //screenOptions={}
-                >
-                    <STACK1.Screen
-                        name={showSplash ? 'Splash' : 'Main'}
-                        component={showSplash ? Splash : Main}
-                    />
-                </STACK1.Navigator>
-            </NavigationContainer>
-        </>
+        <NavigationContainer>
+            <STACK1.Navigator
+                headerMode={'none'}
+            //screenOptions={}
+            >
+                <STACK1.Screen
+                    name={showSplash ? 'Splash' : 'Main'}
+                    component={showSplash ? Splash : Main}
+                />
+            </STACK1.Navigator>
+        </NavigationContainer>
     );
 };
 

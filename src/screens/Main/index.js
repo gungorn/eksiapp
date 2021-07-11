@@ -1,11 +1,7 @@
 import React from 'react';
 import { View, Text, TouchableOpacity } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { HomeTab } from '~/screens/HomeTab';
-import { SearchTab } from '~/screens/SearchTab';
-import { MessageTab } from '~/screens/MessageTab';
-import { NotifyTab } from '~/screens/NotifyTab';
-import { ProfileTab } from '~/screens/ProfileTab';
+import { HomeTab, SearchTab, MessageTab, NotifyTab, ProfileTab } from '~/screens';
 import { TabBar } from '~/screens/Main/TabBar';
 
 const Tab = createBottomTabNavigator();
