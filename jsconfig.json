@@ -15,6 +15,9 @@
             ],
             "~components": [
                 "./src/components/index"
+            ],
+            "~store": [
+                "./src/mobx/index"
             ]
         }
     },

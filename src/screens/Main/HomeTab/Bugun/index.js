@@ -1,4 +1,5 @@
 import React from 'react';
+import { TextInput } from 'react-native';
 import { View, Text, FlatList } from 'react-native';
 
 const data = [
@@ -54,6 +55,10 @@ const Bugun = () => {
                 backgroundColor: 'rgba(40, 40, 40, 1)'
             }}
         >
+            <TextInput
+                style={{ height: 100, width: '100%', backgroundColor: 'gray', fontWeight: 'bold', fontSize: 20 }}
+            />
+
             <FlatList
                 data={data}
                 renderItem={item}

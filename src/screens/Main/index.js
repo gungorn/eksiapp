@@ -16,7 +16,7 @@ const Main = () => {
             }}>
 
             <Tab.Navigator
-                tabBar={TabBar}
+                tabBar={d => <TabBar {...d} />}
             >
                 <Tab.Screen name={'HomeTab'} component={HomeTab} />
                 <Tab.Screen name={'SearchTab'} component={SearchTab} />

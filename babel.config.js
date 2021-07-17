@@ -21,6 +21,10 @@ module.exports = {
           {
             rootPathPrefix: '~components',
             rootPathSuffix: 'src/components/index'
+          },
+          {
+            rootPathPrefix: '~store',
+            rootPathSuffix: 'src/mobx/index'
           }
         ]
       }

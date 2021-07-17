@@ -1,16 +1,21 @@
 import React from 'react';
-import { View, TouchableOpacity, StyleSheet } from 'react-native';
+import { View, TouchableOpacity, StyleSheet, Text } from 'react-native';
+import { observer } from 'mobx-react';
+
+import { keyboard } from '~store';
 
 import Fontisto from 'react-native-vector-icons/Fontisto';
 import Entypo from 'react-native-vector-icons/Entypo';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 
-const TabBar = ({ state: { index }, navigation: {jumpTo } }) => {
+const TabBar = observer(({ state: { index }, navigation: { jumpTo } }) => {
     return (
         <View
             style={style.container}
         >
+            <Text style={{ color: 'red', fontSize: 20 }}>{keyboard.height}</Text>
+
             <TouchableOpacity style={style.tabButton} onPress={() => jumpTo('HomeTab')}>
                 <Fontisto name={'blood-drop'} color={index === 0 ? 'rgba(120, 184, 76, 1)' : '#444444'} size={32} />
             </TouchableOpacity>
@@ -19,7 +24,7 @@ const TabBar = ({ state: { index }, navigation: {jumpTo } }) => {
                 <Fontisto name={'search'} color={index === 1 ? 'rgba(120, 184, 76, 1)' : '#444444'} size={32} />
             </TouchableOpacity>
 
-            <TouchableOpacity style={style.tabButton}onPress={() => jumpTo('MessageTab')}>
+            <TouchableOpacity style={style.tabButton} onPress={() => jumpTo('MessageTab')}>
                 <Entypo name={'message'} color={index === 2 ? 'rgba(120, 184, 76, 1)' : '#444444'} size={32} />
             </TouchableOpacity>
 
@@ -32,7 +37,7 @@ const TabBar = ({ state: { index }, navigation: {jumpTo } }) => {
             </TouchableOpacity>
         </View>
     );
-};
+});
 
 const style = StyleSheet.create({
     container: {
