@@ -26,7 +26,7 @@ const TabBar = ({ state: { index }, navigation: { jumpTo } }) => {
                 style={{
                     height: 3,
                     width: '80%',
-                    backgroundColor: '#49e61e',
+                    backgroundColor: 'rgba(120, 184, 76, 1)',
                     marginTop: 4,
                     borderRadius: 10,
                     alignSelf: 'center',
@@ -53,7 +53,7 @@ const TabBar = ({ state: { index }, navigation: { jumpTo } }) => {
 const style = StyleSheet.create({
     container: {
         flexDirection: 'row',
-        backgroundColor: '#333333'
+        backgroundColor: 'rgba(40, 40, 40, 1)'
     },
     tabButton: {
         paddingVertical: 10

@@ -8,7 +8,7 @@ import { Splash } from '~screens';
 const App = () => {
     return (
         <>
-            <StatusBar backgroundColor={'#333333'} />
+            <StatusBar backgroundColor={'rgba(40, 40, 40, 1)'} />
 
             <View style={{ flex: 1 }}>
                 <Navigation />

@@ -9,11 +9,11 @@ const Splash = () => {
                 flex: 1,
                 justifyContent: 'center',
                 alignItems: 'center',
-                backgroundColor: '#333333'
+                backgroundColor: 'rgba(40, 40, 40, 1)'
         }}>
             <Fontisto
                 name={'blood-drop'}
-                color={'#49e61e'}
+                color={'rgba(120, 184, 76, 1)'}
                 size={162}
             />
         </View>

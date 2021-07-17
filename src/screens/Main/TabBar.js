@@ -12,23 +12,23 @@ const TabBar = ({ state: { index }, navigation: {jumpTo } }) => {
             style={style.container}
         >
             <TouchableOpacity style={style.tabButton} onPress={() => jumpTo('HomeTab')}>
-                <Fontisto name={'blood-drop'} color={index === 0 ? '#49e61e' : '#444444'} size={32} />
+                <Fontisto name={'blood-drop'} color={index === 0 ? 'rgba(120, 184, 76, 1)' : '#444444'} size={32} />
             </TouchableOpacity>
 
             <TouchableOpacity style={style.tabButton} onPress={() => jumpTo('SearchTab')}>
-                <Fontisto name={'search'} color={index === 1 ? '#49e61e' : '#444444'} size={32} />
+                <Fontisto name={'search'} color={index === 1 ? 'rgba(120, 184, 76, 1)' : '#444444'} size={32} />
             </TouchableOpacity>
 
             <TouchableOpacity style={style.tabButton}onPress={() => jumpTo('MessageTab')}>
-                <Entypo name={'message'} color={index === 2 ? '#49e61e' : '#444444'} size={32} />
+                <Entypo name={'message'} color={index === 2 ? 'rgba(120, 184, 76, 1)' : '#444444'} size={32} />
             </TouchableOpacity>
 
             <TouchableOpacity style={style.tabButton} onPress={() => jumpTo('NotifyTab')}>
-                <Ionicons name={'notifications'} color={index === 3 ? '#49e61e' : '#444444'} size={32} />
+                <Ionicons name={'notifications'} color={index === 3 ? 'rgba(120, 184, 76, 1)' : '#444444'} size={32} />
             </TouchableOpacity>
 
             <TouchableOpacity style={style.tabButton} onPress={() => jumpTo('ProfileTab')}>
-                <AntDesign name={'user'} color={index === 4 ? '#49e61e' : '#444444'} size={32} />
+                <AntDesign name={'user'} color={index === 4 ? 'rgba(120, 184, 76, 1)' : '#444444'} size={32} />
             </TouchableOpacity>
         </View>
     );

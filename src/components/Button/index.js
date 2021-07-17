@@ -19,7 +19,7 @@ const Button = props => {
 
             <View
                 style={{
-                    backgroundColor: '#6bf748',
+                    backgroundColor: 'rgba(120, 184, 76, 1)',
                     height: 3,
                     width: '90%',
                     alignSelf: 'center',
