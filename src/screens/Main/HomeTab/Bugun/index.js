@@ -57,6 +57,7 @@ const Bugun = () => {
             <FlatList
                 data={data}
                 renderItem={item}
+                keyExtractor={(d, i) => i.toString()}
                 ItemSeparatorComponent={() => (
                     <View
                         style={{

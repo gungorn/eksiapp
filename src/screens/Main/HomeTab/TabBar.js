@@ -2,15 +2,15 @@ import React from 'react';
 import { View, TouchableOpacity, StyleSheet, Text, ScrollView } from 'react-native';
 
 const tabs = [
-    { title: 'Bugün', name: 'Bugun' },
-    { title: 'Bugün', name: '1' },
-    { title: 'Bugün', name: '2' },
-    { title: 'Bugün', name: '3' },
-    { title: 'Bugün', name: '4' },
-    { title: 'Bugün', name: '5' },
-    { title: 'Bugün', name: '6' },
-    { title: 'Bugün', name: '7' },
-    { title: 'Bugün', name: '8' },
+    { title: 'bugün', name: 'bugun' },
+    { title: 'gündem', name: 'gundem' },
+    { title: 'debe', name: 'debe' },
+    { title: 'sorunsallar', name: 'sorunsallar' },
+    { title: 'takip', name: 'takip' },
+    { title: 'tarihte bugün', name: 'tarihtebugun' },
+    { title: 'son', name: 'son' },
+    { title: 'kenar', name: 'kenar' },
+    { title: 'çaylaklar', name: 'caylaklar' },
 ];
 
 const TabBar = ({ state: { index }, navigation: { jumpTo } }) => {

@@ -17,15 +17,15 @@ const HomeTab = () => {
             <Tab.Navigator
                 tabBar={TabBar}
             >
-                <Tab.Screen name={'Bugun'} component={Bugun} />
-                <Tab.Screen name={'1'} component={Bugun} />
-                <Tab.Screen name={'2'} component={Bugun} />
-                <Tab.Screen name={'3'} component={Bugun} />
-                <Tab.Screen name={'4'} component={Bugun} />
-                <Tab.Screen name={'5'} component={Bugun} />
-                <Tab.Screen name={'6'} component={Bugun} />
-                <Tab.Screen name={'7'} component={Bugun} />
-                <Tab.Screen name={'8'} component={Bugun} />
+                <Tab.Screen name={'bugun'} component={Bugun} />
+                <Tab.Screen name={'gundem'} component={Bugun} />
+                <Tab.Screen name={'debe'} component={Bugun} />
+                <Tab.Screen name={'sorunsallar'} component={Bugun} />
+                <Tab.Screen name={'takip'} component={Bugun} />
+                <Tab.Screen name={'tarihtebugun'} component={Bugun} />
+                <Tab.Screen name={'son'} component={Bugun} />
+                <Tab.Screen name={'kenar'} component={Bugun} />
+                <Tab.Screen name={'caylaklar'} component={Bugun} />
             </Tab.Navigator>
         </View>
     );
