@@ -15,7 +15,10 @@
             ],
             "~components": [
                 "./src/components/index"
-            ]
+            ],
+            "~utils/*": [
+                "./src/utils/*"
+            ],
         }
     },
     "exclude": [

@@ -1,6 +1,7 @@
 import React from 'react';
 import { View } from 'react-native';
-import Fontisto from 'react-native-vector-icons/Fontisto';
+import { DROPSVG } from '~/assets';
+import { W } from '~/utils/dimensions';
 
 const Splash = () => {
     return (
@@ -10,12 +11,8 @@ const Splash = () => {
                 justifyContent: 'center',
                 alignItems: 'center',
                 backgroundColor: 'rgba(40, 40, 40, 1)'
-        }}>
-            <Fontisto
-                name={'blood-drop'}
-                color={'rgba(120, 184, 76, 1)'}
-                size={162}
-            />
+            }}>
+            <DROPSVG width={W(48)} height={W(48)} />
         </View>
     );
 }

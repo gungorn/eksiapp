@@ -21,6 +21,10 @@ module.exports = {
           {
             rootPathPrefix: '~components',
             rootPathSuffix: 'src/components/index'
+          },
+          {
+            rootPathPrefix: '~utils/*',
+            rootPathSuffix: 'src/utils/*'
           }
         ]
       }

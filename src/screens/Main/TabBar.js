@@ -1,10 +1,20 @@
 import React from 'react';
-import { View, TouchableOpacity, StyleSheet } from 'react-native';
+import { View, TouchableOpacity, StyleSheet, Platform } from 'react-native';
 
-import Fontisto from 'react-native-vector-icons/Fontisto';
-import Entypo from 'react-native-vector-icons/Entypo';
-import Ionicons from 'react-native-vector-icons/Ionicons';
-import AntDesign from 'react-native-vector-icons/AntDesign';
+import {
+    DROP0SVG,
+    DROPSVG,
+    MESSAGE0SVG,
+    MESSAGESVG,
+    NOTIFICATION0SVG,
+    NOTIFICATIONSVG,
+    SEARCH0SVG,
+    SEARCHSVG,
+    USER0SVG,
+    USERSVG
+} from '~/assets';
+
+import { W, w, H, h, sbh, sbhi } from '~utils/dimensions';
 
 const TabBar = ({ state: { index }, navigation: {jumpTo } }) => {
     return (
@@ -12,23 +22,23 @@ const TabBar = ({ state: { index }, navigation: {jumpTo } }) => {
             style={style.container}
         >
             <TouchableOpacity style={style.tabButton} onPress={() => jumpTo('HomeTab')}>
-                <Fontisto name={'blood-drop'} color={index === 0 ? 'rgba(120, 184, 76, 1)' : '#444444'} size={32} />
+                {index === 0 ? <DROPSVG width={W(7)} height={W(7)} /> : <DROP0SVG width={W(7)} height={W(7)} />}
             </TouchableOpacity>
 
             <TouchableOpacity style={style.tabButton} onPress={() => jumpTo('SearchTab')}>
-                <Fontisto name={'search'} color={index === 1 ? 'rgba(120, 184, 76, 1)' : '#444444'} size={32} />
+                {index === 1 ? <SEARCHSVG width={W(7)} height={W(7)} /> : <SEARCH0SVG width={W(7)} height={W(7)} />}
             </TouchableOpacity>
 
-            <TouchableOpacity style={style.tabButton}onPress={() => jumpTo('MessageTab')}>
-                <Entypo name={'message'} color={index === 2 ? 'rgba(120, 184, 76, 1)' : '#444444'} size={32} />
+            <TouchableOpacity style={style.tabButton} onPress={() => jumpTo('MessageTab')}>
+                {index === 2 ? <MESSAGESVG width={W(7)} height={W(7)} /> : <MESSAGE0SVG width={W(7)} height={W(7)} />}
             </TouchableOpacity>
 
             <TouchableOpacity style={style.tabButton} onPress={() => jumpTo('NotifyTab')}>
-                <Ionicons name={'notifications'} color={index === 3 ? 'rgba(120, 184, 76, 1)' : '#444444'} size={32} />
+                {index === 3 ? <NOTIFICATIONSVG width={W(7)} height={W(7)} /> : <NOTIFICATION0SVG width={W(7)} height={W(7)} />}
             </TouchableOpacity>
 
             <TouchableOpacity style={style.tabButton} onPress={() => jumpTo('ProfileTab')}>
-                <AntDesign name={'user'} color={index === 4 ? 'rgba(120, 184, 76, 1)' : '#444444'} size={32} />
+                {index === 4 ? <USERSVG width={W(7)} height={W(7)} /> : <USER0SVG width={W(7)} height={W(7)} />}
             </TouchableOpacity>
         </View>
     );
@@ -36,10 +46,12 @@ const TabBar = ({ state: { index }, navigation: {jumpTo } }) => {
 
 const style = StyleSheet.create({
     container: {
-                flexDirection: 'row',
-                justifyContent: 'space-around',
-                backgroundColor: '#111111'
-            },
+        flexDirection: 'row',
+        justifyContent: 'space-around',
+        backgroundColor: '#111111',
+        paddingTop: 8,
+        paddingBottom: 14
+    },
     tabButton: { paddingVertical: 10 }
 })
 
